@@ -19,8 +19,7 @@
 #include "functs.h" // necessario per poter usare le funzioni scritte da noi
 
 using namespace std; // rimuove il namespace std:: dalle istruzioni/oggetti
-                     // della libreria standard. Usare con attenzione.
-
+                 		// della libreria standard. Usare con attenzione.
 
 int main() { // entry point di un programma C++. E' una funzione globale.
              // Deve esistere una e una sola funzione main.
@@ -43,7 +42,7 @@ int main() { // entry point di un programma C++. E' una funzione globale.
 	          // per far conoscere al compilatore la funzione
 
 
-	std::cout<<COSTANTE<<std::endl; // scriviamo su console la variabile COSTANTE che
+	//cout<<COSTANTE<<endl; // scriviamo su console la variabile COSTANTE che
 	                                // e' definita nel file functs.cpp
 	                                // La sua dichiarazione e' nel file functs.h
 
@@ -52,4 +51,9 @@ int main() { // entry point di un programma C++. E' una funzione globale.
 	return 0; // il main DEVE ritornare in intero
 	          // 0 = tutto ok
 	          // errore altrimenti
+}
+
+
+void funct(int i) {
+	cout << "Numero= " + i << endl;
 }
